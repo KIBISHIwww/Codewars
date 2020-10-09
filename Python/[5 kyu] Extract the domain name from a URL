@@ -7,3 +7,7 @@
 def domain_name(url):
     import re
     return re.search('(https://)?(www\d?\.)?(?P<domain>[\w-]+)\.', url).group('domain')
+
+#   Also can use split() to solve the problem
+def domain_name(url):
+    return url.split("//")[-1].split("www.")[-1].split(".")[0]  #[-1] means the last item
