@@ -11,6 +11,6 @@ def descending_order(num):
     ans.sort(reverse=True)                    #Sort and reverse the list.
     return int(''.join(str(x) for x in ans))  #Use join with for loop to print the answer.
     
-#  The more clever way:
+# The more clever way:
 def Descending_Order(num):
     return int("".join(sorted(str(num), reverse=True)))
