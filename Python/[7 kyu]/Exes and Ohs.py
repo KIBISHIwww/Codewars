@@ -6,5 +6,3 @@ def xo(s):
         elif i == 'x' or i == 'X':
             ans_x+=1
     return True if ans_o == ans_x or (ans_o == 0 and ans_x == 0) else False
-
-    yesterday
